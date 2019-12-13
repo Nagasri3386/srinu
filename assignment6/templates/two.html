@@ -1,0 +1,26 @@
+{% load staticfiles %}
+<html>
+<body>
+{% if data1.res1 %}
+    <table align="center" border="0">
+    <tr><th><audio controls><source src="{% static 'audio/nani/n1.mp3' %}"></audio></th></tr>
+    <tr><th><audio controls><source src="{% static 'audio/nani/n2.mp3' %}"></audio></th></tr>
+    <tr><th><audio controls><source src="{% static 'audio/nani/n3.mp3' %}"></audio></th></tr>
+    </table>
+{% endif %}
+{% if data1.res2 %}
+    <table align="center" border="0">
+    <tr><th><audio controls><source src="{% static 'audio/prabas/p1.mp3' %}"></audio></th></tr>
+    <tr><th><audio controls><source src="{% static 'audio/prabas/p2.mp3' %}"></audio></th></tr>
+    <tr><th><audio controls><source src="{% static 'audio/prabas/p3.mp3' %}"></audio></th></tr>
+</table>
+{% endif %}
+{% if data1.res3 %}
+    <table align="center" border="0">
+    <tr><th><audio controls><source src="{% static 'audio/aa/aa1.mp3' %}"></audio></th></tr>
+    <tr><th><audio controls><source src="{% static 'audio/aa/aa2.mp3' %}"></audio></th></tr>
+    <tr><th><audio controls><source src="{% static 'audio/aa/aa3.mp3' %}"></audio></th></tr>
+</table>
+{% endif %}
+</body>
+</html>

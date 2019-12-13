@@ -1,0 +1,13 @@
+{% load staticfiles %}
+<html>
+<body>
+<table align="center" border="0">
+    <tr><td><a href="{% url 's' %}?x='album1'"><img src="{% static 'images/nani.jpg' %}" height="150" width="150"/>
+        <br/><label>NANI</label></a> </td></tr>
+    <tr><td><a href="{% url 's' %}?y='album2'"><img src="{% static 'images/prabas.jpg' %}" height="150" width="150"/>
+        <br/><label>PRABAS</label></a> </td></tr>
+    <tr><td><a href="{% url 's' %}?z='album3'"><img src="{% static 'images/AA.jpg' %}" height="150" width="150"/><br/>
+        <label>AA</label></a> </td></tr>
+</table>
+</body>
+</html>
